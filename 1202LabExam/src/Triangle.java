@@ -3,16 +3,21 @@ public class Triangle {
 	int sideA,sideB,sideC;
 	public Triangle(int sideA, int sideB, int sideC) throws Exception
 	{
-		if((sideA+sideB)<sideC)
-		{
-			throw new Exception("Not a triangle");
-		}
+		if(!this.isTriangle(sideA,sideB,sideC))
+				return;
+		
 		else
 		{
 			this.sideA=sideA;
 			this.sideB=sideB;
 			this.sideC=sideC;
 		}
+	}
+
+	public boolean isTriangle(int sideA2, int sideB2, int sideC2) {
+		if((sideA+sideB)>sideC)
+			return true;
+		return false;
 	}
 	public boolean isEquilatTriangle()
 	{

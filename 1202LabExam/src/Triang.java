@@ -1,4 +1,4 @@
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -11,8 +11,10 @@ public class Triang {
 	}
 
 	@Test
-	public void testTriangle() {
-		fail("Not yet implemented");
+	public void testTriangle() throws Exception {
+		Triangle t=new Triangle(1,2,3);
+		assertEquals(t.isTriangle(t.sideA, t.sideB, t.sideC),true);
 	}
+	
 
 }
