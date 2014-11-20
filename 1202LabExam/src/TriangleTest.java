@@ -22,8 +22,8 @@ public class TriangleTest {
 
 	@Test
 	public void testIsEquilatTriangle() throws Exception {
-		Triangle t=new Triangle(1,1,1);
-		assertEquals(t.isEquilatTriangle(),true);
+		Triangle t=new Triangle(1,2,3);
+		assertEquals(t.isEquilatTriangle(),false);
 	}
 
 	@Test
